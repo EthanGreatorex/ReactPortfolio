@@ -16,6 +16,8 @@
   --third-bg-color: rgb(16, 16, 16);
 }
 
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -30,6 +32,6 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-span{
-    color: var(--accent-color);
+span {
+  color: var(--accent-color);
 }

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 function LoadingScreen() {
   return (
-    <motion.div
+    <motion.div className="loading-screen"
       initial={{ y: 0 }}
       animate={{ y: [0, -20, 0] }}
       transition={{
@@ -15,6 +15,7 @@ function LoadingScreen() {
         fontWeight: "bold",
         textAlign: "center",
         marginTop: "40vh",
+
       }}
     >
       Ethan.dev
