@@ -2,6 +2,7 @@
 .project{
     background-color: var(--third-bg-color);
     max-width: 250px;
+    min-width: 250px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.391);
     border: 4px solid black;
