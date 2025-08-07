@@ -2,8 +2,8 @@
 
 .hero-content{
     display: grid;
-    grid-template-rows: 1fr;
-    margin-bottom: 100px;
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
     max-width: 1024px;
     margin-top: 50px;
 }
@@ -20,7 +20,16 @@
 
 .hero-about{
     margin-left: 20px;
+    grid-column: 1;
+    grid-row: 1;
 }
+
+.hero__profile{
+    margin-top: 50px;
+    margin-right: 25px;
+    grid-column: 2;
+}
+
 .hero-about a{
     color: var(--accent-color);
     text-decoration: none;
