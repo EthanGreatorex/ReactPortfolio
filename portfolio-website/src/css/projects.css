@@ -1,0 +1,16 @@
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-left: -35px;
+    justify-items: center;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .project-list{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 50px 150px;
+    }
+}

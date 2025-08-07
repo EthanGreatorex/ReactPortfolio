@@ -1,0 +1,13 @@
+
+
+.timeline{
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.timeline__timeline-item{
+    padding: 2rem 2rem 2rem;
+    border-left: 2px solid var(--accent-color);
+}

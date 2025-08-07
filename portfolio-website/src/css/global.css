@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --bg-color: #f0f0f0;
+  --text-color: #222222;
+  --accent-color: rgb(255, 149, 19);
+  --font-family: "Karla", sans-serif;
+  --secondary-bg-color: rgb(233, 233, 233);
+  --third-bg-color: rgb(240, 235, 229);
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --secondary-bg-color: rgb(24, 24, 24);
+  --third-bg-color: rgb(16, 16, 16);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+span{
+    color: var(--accent-color);
+}
