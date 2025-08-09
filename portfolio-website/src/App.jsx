@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./css/global.css";
 import NavBar from "./components/NavBar.jsx";
 import MainContent from "./components/MainContent.jsx";
+import React from "react";
 
 function App() {
   const [theme, setTheme] = useState("dark");

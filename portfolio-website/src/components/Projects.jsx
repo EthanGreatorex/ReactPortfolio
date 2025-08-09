@@ -1,4 +1,5 @@
 import Project from "./Project.jsx";
+import React from "react";
 import { FaPython, FaReact, FaCss3, FaHtml5, FaFlask } from "react-icons/fa";
 import CosmoAI from "../assets/cosmo-chat.png";
 import ReactMovieApp from "../assets/react-movie-app.png";

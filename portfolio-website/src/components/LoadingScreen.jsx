@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import React from "react";
 function LoadingScreen() {
   return (
     <motion.div className="loading-screen"

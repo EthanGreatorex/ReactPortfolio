@@ -38,6 +38,15 @@
     cursor: pointer;
 }
 
+.hero-about a:hover{
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.hero-about a:not(:hover){
+    transition: all 0.3s ease;
+}
+
 .copied-email{
     font-size: 1.2rem;
 }

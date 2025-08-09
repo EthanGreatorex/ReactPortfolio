@@ -1,8 +1,12 @@
 import "../css/project.css";
+import React from "react";
+import { PropTypes } from "prop-types";
+import { useFadeInOnScroll } from "../hooks/FadeInOnScroll";
 
 function Projects({ title, image, description, link, technologies }) {
+  const fadeRef = useFadeInOnScroll();
   return (
-    <div className="project">
+    <div className="project" ref={fadeRef}>
       <img
         className="project__image"
         src={image}
@@ -11,7 +15,7 @@ function Projects({ title, image, description, link, technologies }) {
       <div className="project-description">
         <h2 className="project-description__title">{title}</h2>
         <p className="project-description__overview">{description}</p>
-        <a href={link} target="_blank" className="project__link">
+        <a href={link} target="_blank" className="project__link" rel="noreferrer">
           View Project
         </a>
         <div className="project__technologies">
@@ -24,5 +28,17 @@ function Projects({ title, image, description, link, technologies }) {
     </div>
   );
 }
+
+Projects.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  technologies: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.elementType.isRequired
+    })
+  ).isRequired
+};
 
 export default Projects;

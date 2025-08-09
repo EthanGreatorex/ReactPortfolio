@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import TimeLine from "./TimeLine";
 import Projects from "./Projects";
+import React from "react";
 
 function MainContent() {
     return (
@@ -11,5 +12,7 @@ function MainContent() {
         </>
     )
 }
+
+
 
 export default MainContent;
