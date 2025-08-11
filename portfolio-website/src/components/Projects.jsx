@@ -21,28 +21,27 @@ const project_data = [
       { icon: FaHtml5 },
       { icon: FaFlask },
     ],
-    description: "An app built using Flask that allows users to chat with AI and upload files & website URLs."
+    description:
+      "An app built using Flask that allows users to chat with AI and upload files & website URLs.",
+    date: "2025",
   },
   {
     title: "React Movie App",
     image: ReactMovieApp,
     link: "https://ethangreatorex.github.io/ReactMovieApp/",
     technologies: [{ icon: FaCss3 }, { icon: FaHtml5 }, { icon: FaReact }],
-    description: "An app built using React to search for movies and view details.",
+    description:
+      "An app built using React to search for movies and view details.",
+    date: "2025",
   },
   {
     title: "React Quiz App",
     image: ReactQuizApp,
     link: "https://ethangreatorex.github.io/ReactQuizApp/",
     technologies: [{ icon: FaCss3 }, { icon: FaHtml5 }, { icon: FaReact }],
-    description: "This app allows users to take quizzes on various topics. Built using React and The Trivia API.",
-  },
-  {
-    title: "Terminal Website",
-    image: TerminalWebsite,
-    link: "https://ethangreatorex.github.io/TerminalWebsiteV2/",
-    technologies: [{ icon: FaCss3 }, { icon: FaHtml5 }],
-    description: "A fun project that simulates a terminal interface. Built using HTML, JS and CSS"
+    description:
+      "This app allows users to take quizzes on various topics. Built using React and The Trivia API.",
+    date: "2025",
   },
   {
     title: "Easy Article",
@@ -54,14 +53,27 @@ const project_data = [
       { icon: FaFlask },
       { icon: FaPython },
     ],
-    description: "A Flask app that allows users to view articles in a simple format through web scraping. Orignally started as a Python Tkinter app."
+    description:
+      "An app that allows users to view articles in a simple format through web scraping. Orignally started as a Python Tkinter app.",
+    date: "2024",
+  },
+  {
+    title: "Terminal Website",
+    image: TerminalWebsite,
+    link: "https://ethangreatorex.github.io/TerminalWebsiteV2/",
+    technologies: [{ icon: FaCss3 }, { icon: FaHtml5 }],
+    description:
+      "A fun project that simulates a terminal interface. Built using HTML, JS and CSS",
+    date: "2023",
   },
   {
     title: "Space Game",
     image: SpaceGame,
     link: "https://github.com/EthanGreatorex/SpaceGame",
     technologies: [{ icon: FaPython }],
-    description: "A game build using Python and Pygame. Players must avoid the asteroids which get faster over time.",
+    description:
+      "A game build using Python and Pygame. Players must avoid the asteroids which get faster over time.",
+    date: "2022",
   },
 ];
 
@@ -75,7 +87,8 @@ function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
-          className="project-list__motion">
+          className="project-list__motion"
+        >
           <Project
             key={index}
             title={project.title}
@@ -83,6 +96,7 @@ function Projects() {
             link={project.link}
             technologies={project.technologies}
             description={project.description}
+            date={project.date}
           />
         </motion.div>
       ))}

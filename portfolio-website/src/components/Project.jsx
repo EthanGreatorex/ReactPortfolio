@@ -2,7 +2,7 @@ import "../css/project.css";
 import React from "react";
 import { PropTypes } from "prop-types";
 
-function Projects({ title, image, description, link, technologies }) {
+function Projects({ title, image, description, link, technologies, date }) {
   return (
     <div className="project" >
       <img
@@ -22,6 +22,7 @@ function Projects({ title, image, description, link, technologies }) {
             return <Icon key={index} className="project__technology-icon" />;
           })}
         </div>
+        <p className="project-description__date">{date}</p>
       </div>
     </div>
   );
@@ -36,7 +37,8 @@ Projects.propTypes = {
     PropTypes.shape({
       icon: PropTypes.elementType.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  date: PropTypes.string.isRequired
 };
 
 export default Projects;
