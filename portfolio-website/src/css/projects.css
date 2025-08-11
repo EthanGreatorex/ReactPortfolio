@@ -9,7 +9,13 @@
     margin-left: 5px;
 }
 
-@media (min-width: 768px) {
+.project-list__motion{
+    max-height: 300px;
+    min-height: 300px;
+    margin-bottom: 150px;
+}
+
+@media (min-width: 850px) {
     .project-list{
         grid-template-columns: repeat(2, 1fr);
         margin: 50px 50px 150px;

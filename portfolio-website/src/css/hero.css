@@ -30,25 +30,27 @@
     grid-column: 2;
 }
 
-.hero-about a{
+.hero__link{
     color: var(--accent-color);
     text-decoration: none;
     font-size: 1.5rem;
     margin: 0 10px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
-.hero-about a:hover{
+.hero-hero__link:hover{
     color: var(--text-color);
     transition: all 0.3s ease;
 }
 
-.hero-about a:not(:hover){
+.hero-hero__link:not(:hover){
     transition: all 0.3s ease;
 }
 
 .copied-email{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .hero-about__hobbies{

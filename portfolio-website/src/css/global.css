@@ -13,10 +13,8 @@
   --bg-color: #121212;
   --text-color: #f0f0f0;
   --secondary-bg-color: rgb(24, 24, 24);
-  --third-bg-color: rgb(16, 16, 16);
+  --third-bg-color: rgb(22, 22, 22);
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -34,14 +32,4 @@ body {
 
 span {
   color: var(--accent-color);
-}
-
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-.fade-in {
-  animation: fadeIn 1.2s ease-in forwards
 }

@@ -1,12 +1,10 @@
 import "../css/project.css";
 import React from "react";
 import { PropTypes } from "prop-types";
-import { useFadeInOnScroll } from "../hooks/FadeInOnScroll";
 
 function Projects({ title, image, description, link, technologies }) {
-  const fadeRef = useFadeInOnScroll();
   return (
-    <div className="project" ref={fadeRef}>
+    <div className="project" >
       <img
         className="project__image"
         src={image}
