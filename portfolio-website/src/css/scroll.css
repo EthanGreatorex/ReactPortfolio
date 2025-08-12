@@ -1,0 +1,26 @@
+
+.scroll{
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 50px;
+    right: 45px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll__button{
+    text-align: center;
+    font-size: 2rem;
+    background-color:var(--accent-color);
+    border-radius: 50%;
+    border: none;
+
+}
+
+.scroll__icon{
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
