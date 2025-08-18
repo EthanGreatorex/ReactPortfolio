@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import LoadingScreen from "./LoadingScreen";
 import App from "../App.jsx";
+import "../css/loading.css";
 
 function AppWrapper() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,9 +14,10 @@ function AppWrapper() {
   }, []);
 
   return (
-    <AnimatePresence>
+    <AnimatePresence className="loading-screen">
       {isLoading ? (
         <motion.div
+          className="loading-screen"
           key="loader"
           initial={{ opacity: 1 }}
           animate={{ opacity: 1 }}
@@ -27,7 +29,7 @@ function AppWrapper() {
             left: 0,
             width: "100vw",
             height: "100vh",
-            background: "#fff",
+            background: "#121212",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
