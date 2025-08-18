@@ -1,13 +1,14 @@
 import Project from "./Project.jsx";
 import React from "react";
 import { motion } from "framer-motion";
-import { FaPython, FaReact, FaCss3, FaHtml5, FaFlask } from "react-icons/fa";
+import { FaPython, FaReact, FaCss3, FaHtml5, FaFlask, FaSass } from "react-icons/fa";
 import CosmoAI from "../assets/cosmo-chat.png";
 import ReactMovieApp from "../assets/react-movie-app.png";
 import ReactQuizApp from "../assets/react-quiz-app.png";
 import TerminalWebsite from "../assets/terminal-website.png";
 import EasyArticle from "../assets/easy-article.png";
 import SpaceGame from "../assets/space-game.png";
+import ReactPlanetApp from "../assets/planet-explorer.png"
 import "../css/projects.css";
 
 const project_data = [
@@ -32,6 +33,15 @@ const project_data = [
     technologies: [{ icon: FaCss3 }, { icon: FaHtml5 }, { icon: FaReact }],
     description:
       "An app built using React to search for movies and view details.",
+    date: "2025",
+  },
+  {
+    title: "React Planet Explorer",
+    image: ReactPlanetApp,
+    link: "https://ethangreatorex.github.io/PlanetExplorer/",
+    technologies: [{ icon: FaSass }, { icon: FaHtml5 }, { icon: FaReact }],
+    description:
+      "An app built using React to search for star wars planets and view lots of facts!",
     date: "2025",
   },
   {
