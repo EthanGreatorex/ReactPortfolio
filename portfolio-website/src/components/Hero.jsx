@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import { motion } from "framer-motion";
-import ProfilePicture from "../assets/london-pfp.jpg";
+import ProfilePicture from "../assets/pfp.jpeg";
 import "../css/hero.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
