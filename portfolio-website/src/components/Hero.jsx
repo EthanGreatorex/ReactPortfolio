@@ -9,7 +9,7 @@ function Hero() {
   const [hasCopyEmail, setCopyEmail] = useState(false);
 
   function copyEmail() {
-    navigator.clipboard.writeText("eggGreatorex@gmail.com");
+    navigator.clipboard.writeText("eggreatorex@icloud.com");
     setCopyEmail(true);
     setTimeout(() => setCopyEmail(false), 2000);
   }
