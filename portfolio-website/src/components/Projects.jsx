@@ -9,6 +9,7 @@ import TerminalWebsite from "../assets/terminal-website.png";
 import EasyArticle from "../assets/easy-article.png";
 import SpaceGame from "../assets/space-game.png";
 import ReactPlanetApp from "../assets/planet-explorer.png"
+import youtube from "../assets/youtube.png"
 import "../css/projects.css";
 
 const project_data = [
@@ -24,6 +25,19 @@ const project_data = [
     ],
     description:
       "An app built using Flask that allows users to chat with AI and upload files & website URLs.",
+    date: "2025",
+  },
+  {
+    title: "Youtube Comment Search",
+    image: youtube,
+    link: "https://ethangreatorex.github.io/YouTubeCommentSearcher/",
+    technologies: [
+      { icon: FaReact },
+      { icon: FaCss3 },
+      { icon: FaHtml5 },
+    ],
+    description:
+      "Fetch and search for comments & users from a youtube video",
     date: "2025",
   },
   {
