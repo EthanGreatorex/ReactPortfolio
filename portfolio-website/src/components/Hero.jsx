@@ -24,7 +24,7 @@ function Hero() {
         <div className="hero-content">
           <div className="hero__profile">
             <img
-              className="hero__profile-image"
+              className="hero__profile-image expand-on-hover"
               src={ProfilePicture}
               alt="ethan taking selfie in London"
             />

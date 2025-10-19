@@ -13,13 +13,23 @@
   overflow: hidden;
 }
 
+img {
+  transition: scale 0.5s ease;
+}
+
 .project__image {
   max-width: 350px;
+  min-width: 350px;
   min-height: 170px;
   max-height: 170px;
   width: stretch;
   border-radius: 10px;
   margin-top: 10px;
+  overflow: hidden;
+}
+
+.expand-on-hover:hover {
+  scale: 1.2;
 }
 
 .project-description {
@@ -69,4 +79,3 @@
     max-height: 455px;
   }
 }
-

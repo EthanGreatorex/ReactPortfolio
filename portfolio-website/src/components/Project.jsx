@@ -6,7 +6,7 @@ function Projects({ title, image, description, link, technologies, date }) {
   return (
     <div className="project" >
       <img
-        className="project__image"
+        className="project__image expand-on-hover"
         src={image}
         alt={`${title} project screenshot`}
       />
