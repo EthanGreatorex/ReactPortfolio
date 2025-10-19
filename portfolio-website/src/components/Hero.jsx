@@ -17,10 +17,11 @@ function Hero() {
   return (
     <>
       <motion.div
-      animate={{ opacity: 1.5, y: 0 }}
-      initial={{ opacity: 0, y: -50 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-      viewport={{ once: true, amount: 0.3 }}>
+        animate={{ opacity: 1.5, y: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <div className="hero-content">
           <div className="hero__profile">
             <img
@@ -32,7 +33,43 @@ function Hero() {
           <div className="hero-about">
             <h1 className="hero-about__title">Hi,</h1>
             <h3 className="hero-about__name">I&apos;m Ethan.</h3>
-            <p className="hero-about__occupation">Student learning Web Dev</p>
+            <motion.p
+              className="hero-about__occupation"
+              initial="initial"
+              animate="animate"
+              variants={{
+                animate: {
+                  transition: {
+                    staggerChildren: 0.1, // controls the wave speed
+                    repeat: Infinity,
+                    repeatType: "loop",
+                    repeatDelay: 0.5,
+                  },
+                },
+              }}
+            >
+              {"Student learning Web Dev".split("").map((char, index) => (
+                <motion.span
+                  key={index}
+                  variants={{
+                    initial: { color: "var(--base-animation-text)" },
+                    animate: {
+                      color: "var(--accent-color)",
+                      transition: {
+                        duration: 1.2,
+                        repeat: Infinity,
+                        repeatType: "reverse",
+                        ease: "easeInOut",
+                      },
+                    },
+                  }}
+                  style={{ display: "inline-block" }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+            </motion.p>
+
             <a
               href="https://github.com/EthanGreatorex"
               className="hero__link"
