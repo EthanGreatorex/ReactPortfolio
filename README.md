@@ -1,3 +1,3 @@
 ## My Portfolio Website
 
-https://ethangreatorex.github.io/ReactPortfolio/
+https://ethangreatorex.co.uk/
