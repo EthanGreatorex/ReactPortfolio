@@ -13,6 +13,19 @@ function AppWrapper() {
     return () => clearTimeout(timer);
   }, []);
 
+  const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    setTheme(prefersDark ? "dark" : "light");
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <AnimatePresence className="loading-screen">
       {isLoading ? (
@@ -29,7 +42,7 @@ function AppWrapper() {
             left: 0,
             width: "100vw",
             height: "100vh",
-            background: "#121212",
+            background: "var(--background-colour)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

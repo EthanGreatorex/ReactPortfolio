@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import '../css/loading.css'
+import "../css/loading.css";
 import React from "react";
+import ProfilePicture from "../assets/pfp-2.jpeg";
 function LoadingScreen() {
   return (
     <motion.div
@@ -15,15 +16,24 @@ function LoadingScreen() {
         fontSize: "2rem",
         fontWeight: "bold",
         textAlign: "center",
-        marginTop: "20vh",
-        color: "white"
-
+        color: "var(--text-color)",
+        display: "flex",
+        flexDirection: "column"
       }}
     >
-      Ethan<span style={{color:"rgb(255, 149, 19)"}}>Greatorex</span>
+      <img
+        src={ProfilePicture}
+        alt="profile picture"
+        className="expand-on-hover"
+        style={{
+          width: "200px",
+          marginBottom: "50px",
+          borderRadius: "50%"
+        }}
+      />
+      Ethan<span style={{ color: "rgb(255, 149, 19)" }}> Greatorex</span>
     </motion.div>
   );
 }
 
 export default LoadingScreen;
-
