@@ -20,7 +20,7 @@ function LoadingScreen() {
 
       }}
     >
-      Ethan<span style={{color:"rgb(255, 149, 19)"}}>.dev</span>
+      Ethan<span style={{color:"rgb(255, 149, 19)"}}>Greatorex</span>
     </motion.div>
   );
 }
